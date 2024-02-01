@@ -14,3 +14,7 @@ def autor_create_view(request):
     else:
         form = registro_db()
         return render(request, 'index.html', {'form':form})
+
+
+def inicio(request):
+    return render(request, "app_coder/index.html")
