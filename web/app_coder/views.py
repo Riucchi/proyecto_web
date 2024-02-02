@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 
-from app_coder.models import registro_db
+from app_coder.forms import registro_db
 # Create your views here.
 
 def autor_create_view(request):
