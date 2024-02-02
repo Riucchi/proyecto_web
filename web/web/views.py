@@ -1,5 +1,4 @@
 from django.http import HttpResponse
-from django.template import loader, Template, Context
 from app_coder.models import Registro
 
 def agregar_curso(request):
