@@ -1,3 +1,7 @@
 from django.contrib import admin
 
-# Register your models here.
+from app_coder.models import Registro
+
+# Register your models here
+
+admin.site.register(Registro)
