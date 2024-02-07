@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-@qpam)#833^ql61le67*g+hwmkjpoji+8ea2w*h=xve#_g1mu0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -56,7 +56,7 @@ ROOT_URLCONF = 'web.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['E:/Proyecto_2/proyecto_web/proyecto_web/web/web/plantillas'],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

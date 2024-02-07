@@ -17,25 +17,25 @@ def autor_create_view(request):
 
 
 def inicio(request):
-    return render(request, "app_coder/index.html")
+    return render(request, "app_coder/index.html", {"name": "index"})
 
 def about(request):
-    return render(request, 'app_coder/about.html')
+    return render(request, 'app_coder/about.html',{"name": "sobre nosotros"})
 
 def booking(request):
-    return render(request, 'app_coder/booking.html')
+    return render(request, 'app_coder/booking.html',{"name": "booking"})
 
 def contact(request):
-    return render(request, 'app_coder/contact.html')
+    return render(request, 'app_coder/contact.html',{"name": "contacto"})
 
 def room(request):
-    return render(request, 'app_coder/room.html')
+    return render(request, 'app_coder/room.html',{"name": "piezas"})
 
 def service(request):
-    return render(request, 'app_coder/service.html')
+    return render(request, 'app_coder/service.html',{"name": "servicio"})
 
 def team(request):
-    return render(request, 'app_coder/team.html')
+    return render(request, 'app_coder/team.html',{"name": "team"})
 
 def testimonial(request):
-    return render(request, 'app_coder/testimonial.html')
+    return render(request, 'app_coder/testimonial.html',{"name": "testimonio"})

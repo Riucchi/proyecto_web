@@ -7,10 +7,6 @@ class Registro(models.Model):
     apellido = models.CharField(max_length=40)
     edad = models.IntegerField()
     email = models.CharField(max_length=20)
+    def __str__(self):
+        return f"nombre : {self.nombre} | apellido: {self.apellido} | edad: {self.edad}, email: {self.email} "
 
-
-
-class registro_db(forms.ModelForm):
-    class Meta:
-        model = Registro
-        fields = ['nombre', 'apellido', 'edad', 'email']
